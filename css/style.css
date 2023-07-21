@@ -52,11 +52,14 @@ body{
   background: linear-gradient(180deg, rgba(255,198,247,1) 0%, rgba(105,114,244,1) 100%);
 }
 .title {
-  font-size: 50px;
+  font-size: 150px;
 }
 .typing-container {
   width: 500px;
   margin: 0 auto;
+}
+.text {
+  font-size: 24px;
 }
 
 /* About Section */

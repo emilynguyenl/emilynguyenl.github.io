@@ -4,7 +4,7 @@ const sentences = [
     "my name is emily.",
     "i go to chapman university.",
     "i am interested in data & analytics.",
-    "i am also a lover of puzzles and traveling."
+    "i am also a lover of puzzles."
   ];
   
   const typingSpeed = 100;
