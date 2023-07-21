@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+@import url('https://fonts.cdnfonts.com/css/menlo');
+                
 body{
     margin:0;
     padding:0;
@@ -53,3 +55,51 @@ body{
 }
 
 /* About Section */
+.custom-box {
+  background-color: #282c34;
+  width: 600px;
+}
+.custom-box p {
+  line-height: 0.75;
+}
+.purple {
+  color: #c678dd;
+  font-family: 'Menlo', sans-serif;
+}
+.light-orange {
+  color: #e5bf7b;
+  font-family: 'Menlo', sans-serif;
+}
+.dark-orange {
+  color: #d19966;
+  font-family: 'Menlo', sans-serif;
+}
+.blue {
+  color: #62afed;
+  font-family: 'Menlo', sans-serif;
+}
+.light-gray {
+  color: #abb2bf;
+  font-family: 'Menlo', sans-serif;
+}
+.dark-gray {
+  color: #808691;
+  font-family: 'Menlo', sans-serif;
+}
+.green {
+  color: #98c379;
+  font-family: 'Menlo', sans-serif;
+}
+.yellow {
+  color: #ffd602;
+  font-family: 'Menlo', sans-serif;
+}
+.one-indent {
+  margin-left: 20px;
+}
+.two-indent {
+  margin-left: 40px;
+}
+.three-indent {
+  margin-left: 60px;
+}
