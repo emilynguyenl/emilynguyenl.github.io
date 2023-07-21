@@ -18,6 +18,7 @@ body{
     background: rgba(255, 0, 208, 0.6) !important;
     padding: 20px 0;
     transition: color 0.2s, border-bottom-color 0.2s;
+    box-shadow: 1px 5px 5px #a4a4a4;
 }
 
 .navbar-nav .nav-link {
