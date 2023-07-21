@@ -1,4 +1,3 @@
-// script.js
 const sentences = [
     "nice to meet you!",
     "welcome to my portfolio :)",
@@ -8,7 +7,7 @@ const sentences = [
     "i am also a lover of puzzles and traveling."
   ];
   
-  const typingSpeed = 100; // Adjust the typing speed (in milliseconds)
+  const typingSpeed = 100;
   
   const typingTextElement = document.getElementById("typing-text");
   let sentenceIndex = 0;

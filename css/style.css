@@ -54,6 +54,10 @@ body{
 .title {
   font-size: 50px;
 }
+.typing-container {
+  width: 500px;
+  margin: 0 auto;
+}
 
 /* About Section */
 .custom-box {
