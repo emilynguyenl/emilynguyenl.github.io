@@ -1,3 +1,4 @@
+// code for typing text on home page
 const sentences = [
     "nice to meet you!",
     "welcome to my portfolio :)",
@@ -33,7 +34,8 @@ const sentences = [
       setTimeout(typeText, typingSpeed / 2); // Wait for a brief pause before typing the next sentence
     }
   }
-  
+
   // Start the typing effect when the page loads
   window.onload = typeText;
   
+// Code scrolling to about page

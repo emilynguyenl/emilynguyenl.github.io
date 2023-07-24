@@ -13,20 +13,20 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#home">Emily Nguyen</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
+                      <a class="nav-link" href="#about" onclick="scrollToSection('#about')">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#skills">Skills</a>
+                      <a class="nav-link" href="#projects" onclick="scrollToSection('#projects')">Projects</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#projects">Projects</a>
+                      <a class="nav-link" href="#contact" onclick="scrollToSection('#contacts')">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -54,52 +54,165 @@
         </section>
 
         <!-- About Section -->
-        <section id="about">
+        <section id="about" class="py-5">
           <div class="container">
             <h2 class="text-center">About Me</h2>
-            <!-- code block -->
-            <div class="d-flex justify-content-center">
-              <div class="custom-box p-4">
-                <p class="purple">class <span class="light-orange">Emily</span> <span class="light-gray">:</span></p>
-                <!-- def aboutMe() -->
-                <p class="purple one-indent">def <span class="blue">aboutMe</span> 
-                  <span class="yellow">( )</span> <span class="light-gray">:</span></p>
-                <p class="dark-gray two-indent">fullName <span class="purple">= </span> <span class="green">"Emily Nguyen"</span></p>
-                <p class="dark-gray two-indent">hometown <span class="purple">= </span> <span class="green">"Phoenix, Arizona"</span></p>
-                <p class="dark-gray two-indent">university <span class="purple">= </span> <span class="green">"Chapman University"</span></p>
-                <p class="dark-gray two-indent">major <span class="purple">= </span> <span class="green">"Computer Science"</span></p>
-                <p class="dark-gray two-indent">minors <span class="purple">= </span> <span class="yellow">[</span>
-                  <span class="green">"Psychology"</span> <span class="light-gray">, </span>
-                  <span class="green">"Analytics"</span> <span class="yellow">]</span></p>
-                <p class="dark-gray two-indent">expectedGradDate <span class="purple">= </span> <span class="dark-orange">2024</span></p>
-                <p class="dark-gray two-indent">interestsAndHobbies <span class="purple">= </span> <span class="yellow">[</span></p>
-                <p class="green three-indent">"Roller Skating" <span class="light-gray">,</span></p>
-                <p class="green three-indent">"Traveling" <span class="light-gray">,</span></p>
-                <p class="green three-indent">"Puzzles" <span class="light-gray">,</span></p>
-                <p class="green three-indent">"Cooking" <span class="light-gray">,</span></p>
-                <p class="green three-indent">"Baseball"</p>
-                <p class="yellow two-indent">]</p>
-                <!-- def connect() -->
-                <p class="purple one-indent">def <span class="blue">connect</span> 
-                  <span class="yellow">( )</span> <span class="light-gray">:</span></p>
-                <p class="dark-gray two-indent">resume <span class="purple">= 
-                  <a href="Emily Nguyen Resume.pdf" class="green" target="_blank">"click here for my resume"</a></span></p>
-                <p class="dark-gray two-indent">email <span class="purple">= 
-                  <a href="mailto:enguye24@gmail.com" class="green" target="_blank">"enguye24@gmail.com"</a></span></p>
-                <p class="dark-gray two-indent">links <span class="purple">= </span> <span class="yellow">[</span></p>
-                <p class="light-gray three-indent"> <a href="http://www.linkedin.com/in/emily-nguyenl" class="green" target="_blank">"LinkedIn"</a>,</p>
-                <p class="green three-indent"> <a href="https://github.com/emilynguyenl" class="green" target="_blank">"Github"</a></p>
-                <p class="yellow two-indent">]</p>
+            <div class="row">
+              <!-- code block -->
+              <div class="col-md-8 d-flex justify-content-center">
+                <div class="custom-box p-4">
+                  <p class="purple">class <span class="light-orange">Emily</span> <span class="light-gray">:</span></p>
+                  <!-- def aboutMe() -->
+                  <p class="purple one-indent">def <span class="blue">aboutMe</span> 
+                    <span class="yellow">( )</span> <span class="light-gray">:</span></p>
+                  <p class="dark-gray two-indent">fullName <span class="purple">= </span> <span class="green">"Emily Nguyen"</span></p>
+                  <p class="dark-gray two-indent">hometown <span class="purple">= </span> <span class="green">"Phoenix, Arizona"</span></p>
+                  <p class="dark-gray two-indent">university <span class="purple">= </span> <span class="green">"Chapman University"</span></p>
+                  <p class="dark-gray two-indent">major <span class="purple">= </span> <span class="green">"Computer Science"</span></p>
+                  <p class="dark-gray two-indent">minors <span class="purple">= </span> <span class="yellow">[</span>
+                    <span class="green">"Psychology"</span> <span class="light-gray">, </span>
+                    <span class="green">"Analytics"</span> <span class="yellow">]</span></p>
+                  <p class="dark-gray two-indent">expectedGradDate <span class="purple">= </span> <span class="dark-orange">2024</span></p>
+                  <p class="dark-gray two-indent">interestsAndHobbies <span class="purple">= </span> <span class="yellow">[</span></p>
+                  <p class="green three-indent">"Roller Skating" <span class="light-gray">,</span></p>
+                  <p class="green three-indent">"Traveling" <span class="light-gray">,</span></p>
+                  <p class="green three-indent">"Puzzles" <span class="light-gray">,</span></p>
+                  <p class="green three-indent">"Cooking" <span class="light-gray">,</span></p>
+                  <p class="green three-indent">"Baseball"</p>
+                  <p class="yellow two-indent">]</p>
+                  <!-- def connect() -->
+                  <p class="purple one-indent">def <span class="blue">connect</span> 
+                    <span class="yellow">( )</span> <span class="light-gray">:</span></p>
+                  <p class="dark-gray two-indent">resume <span class="purple">= 
+                    <a href="Emily Nguyen Resume.pdf" class="green" target="_blank">"click here for my resume"</a></span></p>
+                  <p class="dark-gray two-indent">email <span class="purple">= 
+                    <a href="mailto:enguye24@gmail.com" class="green" target="_blank">"enguye24@gmail.com"</a></span></p>
+                  <p class="dark-gray two-indent">links <span class="purple">= </span> <span class="yellow">[</span></p>
+                  <p class="light-gray three-indent"> <a href="http://www.linkedin.com/in/emily-nguyenl" class="green" target="_blank">"LinkedIn"</a>,</p>
+                  <p class="green three-indent"> <a href="https://github.com/emilynguyenl" class="green" target="_blank">"Github"</a></p>
+                  <p class="yellow two-indent">]</p>
+                </div>
+              </div>
+              <!-- Skills Section -->
+              <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="skills-section">
+                  <h2 class="text-center">Programming Languages</h2>
+                  <div class="skill-images">
+                    <!-- Row 1 -->
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/python-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">Python</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/java-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">Java</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/mySQL-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">MySQL</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/c++-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">C++</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/html-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">HTML5</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/css-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">CSS</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/js-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">JavaScript</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/linux-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">Linux</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="text-center">Technical Tools</h2>
+                  <div class="skill-images">
+                    <!-- Row 1 -->
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/github-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">GitHub</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/ssms-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">SQL Server</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/vscode-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">VS Code</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/bootstrap-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">Bootstrap</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/jira-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">Jira</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/cyberark-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">CyberArk</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/ms-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">MS Suite</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="image-container">
+                          <img src="images/figma-logo.png" alt="Skill 1" class="hover-image">
+                          <div class="hover-text">Figma</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <!-- Skills section -->
-        <section id="skills">
-          <div class="container">
-            <h2 class="text-center">My Skills</h2>
-            <!-- Add your content here -->
           </div>
         </section>
 
@@ -107,6 +220,14 @@
         <section id="projects">
           <div class="container">
             <h2 class="text-center">My Projects</h2>
+            <!-- Add your content here -->
+          </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+          <div class="container">
+            <h2 class="text-center">Contact Me</h2>
             <!-- Add your content here -->
           </div>
         </section>
