@@ -6,6 +6,9 @@
         <title>Emily Nguyen Portfolio</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -15,8 +18,8 @@
                 <a class="navbar-brand" href="#home">Emily Nguyen</a>
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span> -->
-                </button>
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -217,19 +220,201 @@
         </section>
 
         <!-- Projects section -->
-        <section id="projects">
+        <section id="projects" class="py-5">
           <div class="container">
             <h2 class="text-center">My Projects</h2>
-            <!-- Add your content here -->
+            <!-- Row 1 -->
+            <div class="row">
+              <!-- Column 1 -->
+              <div class="col-md-4">
+                <div class="project-item" data-toggle="modal" data-target="#projectModal1">
+                  <img src="images/project1.png" alt="Project 1">
+                </div>
+              </div>
+              <!-- Column 2 -->
+              <div class="col-md-4">
+                <div class="project-item" data-toggle="modal" data-target="#projectModal2">
+                  <img src="images/cookbook.png" alt="Project 2">
+                </div>
+              </div>
+              <!-- Column 3 -->
+              <div class="col-md-4">
+                <div class="project-item" data-toggle="modal" data-target="#projectModal3">
+                  <img src="images/cookbook.png" alt="Project 3">
+                </div>
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+              <!-- Column 1 -->
+              <div class="col-md-4">
+                <div class="project-item" data-toggle="modal" data-target="#projectModal4">
+                  <img src="images/project1.png" alt="Project 4">
+                </div>
+              </div>
+              <!-- Column 2 -->
+              <div class="col-md-4">
+                <div class="project-item" data-toggle="modal" data-target="#projectModal5">
+                  <img src="images/cookbook.png" alt="Project 5">
+                </div>
+              </div>
+              <!-- Column 3 -->
+              <div class="col-md-4">
+                <div class="project-item" data-toggle="modal" data-target="#projectModal6">
+                  <img src="images/cookbook.png" alt="Project 6">
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <!-- Contact section -->
-        <section id="contact">
-          <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <!-- Add your content here -->
+        <!-- Modal for project 1 -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" 
+          aria-labelledby="projectModalLabel1" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <img src="images/project1.png" alt="project1">
+              <div class="overlay">
+                <img src="images/white.png" alt="white" class="overlay-image">
+                <div class="project-description">
+                  <h3>project title</h3>
+                  <p>description of project</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
+
+        <!-- Modal for project 2 -->
+        <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" 
+          aria-labelledby="projectModalLabel2" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <img src="images/cookbook.png" alt="project2">
+              <div class="overlay">
+                <img src="images/white.png" alt="white" class="overlay-image">
+                <div class="project-description">
+                  <h3>project title</h3>
+                  <p>description of project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for project 3 -->
+        <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" 
+          aria-labelledby="projectModalLabel3" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <img src="images/cookbook.png" alt="project3">
+              <div class="overlay">
+                <img src="images/white.png" alt="white" class="overlay-image">
+                <div class="project-description">
+                  <h3>project title</h3>
+                  <p>description of project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for project 4 -->
+        <div class="modal fade" id="projectModal4" tabindex="-1" role="dialog" 
+          aria-labelledby="projectModalLabel4" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <img src="images/cookbook.png" alt="project4">
+              <div class="overlay">
+                <img src="images/white.png" alt="white" class="overlay-image">
+                <div class="project-description">
+                  <h3>project title</h3>
+                  <p>description of project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for project 5 -->
+        <div class="modal fade" id="projectModal5" tabindex="-1" role="dialog" 
+          aria-labelledby="projectModalLabel5" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <img src="images/cookbook.png" alt="project5">
+              <div class="overlay">
+                <img src="images/white.png" alt="white" class="overlay-image">
+                <div class="project-description">
+                  <h3>project title</h3>
+                  <p>description of project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for project 6 -->
+        <div class="modal fade" id="projectModal6" tabindex="-1" role="dialog" 
+          aria-labelledby="projectModalLabel6" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <img src="images/cookbook.png" alt="project6">
+              <div class="overlay">
+                <img src="images/white.png" alt="white" class="overlay-image">
+                <div class="project-description">
+                  <h3>project title</h3>
+                  <p>description of project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact section -->
+        <section id='contact' class='section contact-section border-d' >
+					<div class='section-block contact-block' >
+						<div class='container-fluid' >
+							<div class='section-header' >
+								<h2>Contact <strong class='color' >Me</strong></h2>
+							</div>
+							<div class='row' >
+								<div class='col-md-8' >
+									<div class='contact-form' >
+										<form id='contact-form' data-toggle='validator' method='post' action='mail.php' >
+											<div id='contact-form-result' ></div>
+											<div class='row' >
+												<div class='col-md-6' >
+													<div class='form-group' >
+														<input type='text' class='form-control' placeholder='Name' name='name' required>
+														<div class='help-block with-errors' ></div>
+													</div>												
+												</div>
+												<div class='col-md-6' >
+													<div class='form-group' >
+														<input type='email' class='form-control' placeholder='Email' name='email' required>
+														<div class='help-block with-errors' ></div>
+													</div>
+												</div>
+											</div>
+											<div class='form-group' >
+												<input type='text' class='form-control' placeholder='Subject' name='subject' required>
+												<div class='help-block with-errors' ></div>
+											</div>
+											<div class='form-group' >
+												<textarea class='form-control' placeholder='Message' name='message' rows='5' required></textarea>
+												<div class='help-block with-errors' ></div>
+											</div>
+											<div class='form-group text-center' >
+												<button type='submit' class='btn-custom btn-color' >
+													Send Message
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+              </div>
+            </div>
+          </div>
+        </section>      
     </body>
 </html>
