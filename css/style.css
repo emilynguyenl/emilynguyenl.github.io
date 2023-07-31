@@ -9,16 +9,21 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+section {
+  padding-top: 80px;
+}
+
 /* Navigation Bar */
 .navbar{
+    position: sticky;
+    top: 0;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.2rem;
-    background: rgba(255, 0, 208, 0.6) !important;
-    padding: 20px 0;
     transition: color 0.2s, border-bottom-color 0.2s;
     box-shadow: 1px 5px 5px #a4a4a4;
+    z-index: 999;
 }
 
 .navbar-nav .nav-link {
@@ -68,6 +73,9 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 #about a:hover {
   color: #62afed;
+}
+#about h2 {
+  margin-top: 10px;
 }
 .custom-box {
   background-color: #282c34;
@@ -157,11 +165,15 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   background-color: #ffe4fb;
 }
 
+#projects h2 {
+  margin-top: 10px;
+}
+
 .project-item {
   cursor: pointer;
   margin-bottom: 20px;
   position: relative;
-  width: 300px; /* Set the width of the project box */
+  width: 350px; /* Set the width of the project box */
   height: 300px; /* Set the height of the project box */
   overflow: hidden;
   border-radius: 5px;
