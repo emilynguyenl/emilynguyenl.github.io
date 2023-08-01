@@ -272,3 +272,8 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Contact Section */
+.contact-form {
+  width: 500px;
+}
