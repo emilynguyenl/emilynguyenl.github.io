@@ -38,19 +38,18 @@
 
         <!-- Home Page -->
         <section id="home">
-          <div class="container d-flex flex-column justify-content-center align-items-center vh-100"> <!-- mt = margin top a.k.a the amount of space it is from the navbar-->
+          <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
             <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-8 order-md-1 text-center typing-container">
+              <div class="col-md-8 text-center typing-container">
                 <!-- Title on the left -->
-                <h1 class="title">Hello!</h1>
+                <h1 class="title">hello!</h1>
                 <!-- Text below title that types -->
                 <p class="text" id="typing-text"></p>
                 <script src="js/script.js"></script>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 order-md-2">
+              <div class="col-md-4 square-container">
                 <!-- Photo on the right -->
-                <img src="images/IMG_7464.JPG" 
-                alt="Your Photo" class="img-fluid rounded" style="max-width: 80%;">
+                <img class="profile-pic" src="images/profile.JPG" alt="Your Photo"">
               </div>
             </div>
           </div>
@@ -59,7 +58,7 @@
         <!-- About Section -->
         <section id="about" class="py-5">
           <div class="container">
-            <h2 class="text-center">About Me</h2>
+            <h1 class="text-center">About Me</h1>
             <div class="row">
               <!-- code block -->
               <div class="col-md-8 d-flex justify-content-center">
@@ -336,7 +335,9 @@
                 <div class="project-description">
                   <h3>PLAYLIST SQL PROJECT</h3>
                   <a href="https://github.com/emilynguyenl/Playlist-App" target="_blank"><strong>link to repo</strong></a>
-                  <p>description of project</p>
+                  <p>Playlist database application incorporating DMLs. Users are able to insert, update, view, and 
+                    filter through songs, artists, and albums.
+                  </p>
                 </div>
               </div>
             </div>
@@ -425,7 +426,7 @@
 
         <!-- Contact section -->
         <!-- Adapted from https://startbootstrap.com/guides/bootstrap-form-setup-guide -->
-        <section id='contact'>
+        <section id="contact">
 					<h2 class="text-center">Contact Me</h2>
           <div class="container py-4 d-flex justify-content-center align-items-center">
             <form id="contactForm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoragyv" method="post" class="contact-form">
@@ -444,12 +445,36 @@
                 <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 </div>
                 <div class="d-grid">
-                  <input class="btn btn-lg btn-outline-info" type="submit" value="Submit">
+                  <input class="btn btn-lg btn-outline-secondary" type="submit" value="Submit">
                 </div>
               </fieldset>
             </form>
           </div>
-        </section>      
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+          <div class="container foot">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Links in the left column -->
+                <ul class="list-inline footer-link">
+                  <li class="list-inline-item"><a href="http://www.linkedin.com/in/emily-nguyenl" target="_blank">LinkedIn</a></li>
+                  <li class="list-inline-item">•</li>
+                  <li class="list-inline-item"><a href="Emily Nguyen Resume.pdf" target="_blank">Resume</a></li>
+                  <li class="list-inline-item">•</li>
+                  <li class="list-inline-item"><a href="mailto:enguye24@gmail.com" target="_blank">Email</a></li>
+                  <li class="list-inline-item">•</li>
+                  <li class="list-inline-item"><a href="https://github.com/emilynguyenl" target="_blank">GitHub</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <!-- Text in the right column -->
+                <p>copyright &copy; emily nguyen 2023</p>
+              </div>
+            </div>
+          </div>
+        </footer>
 
     </body>
 </html>

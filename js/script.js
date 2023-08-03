@@ -37,5 +37,3 @@ const sentences = [
 
   // Start the typing effect when the page loads
   window.onload = typeText;
-  
-// Code for projects page
