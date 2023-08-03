@@ -25,11 +25,11 @@ section {
 }
 .navbar-nav .nav-link {
     position: relative;
-    color: #494949; /* Set the default color of the link text */
+    color: #494949;
     text-decoration: none;
 }
 ul.navbar-nav li.nav-item a.nav-link:hover {
-  color: #414df7; /* Set the desired color of the link text when hovered */
+  color: #414df7;
 }
 .navbar-nav .nav-link::before {
   content: '';
@@ -37,10 +37,10 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   bottom: -2px;
   left: 48%;
   transform: translateX(-50%);
-  width: 0; /* Initially, the underline width is zero */
+  width: 0; /* underline width is initially 0 */
   height: 2px;
-  background-color: #ffc6f7; /* Set the desired color for the underline */
-  transition: width 0.2s; /* Transition the width property to create the animation */
+  background-color: #ffc6f7; /* color of underline */
+  transition: width 0.2s;
 }
 .navbar-nav .nav-link:hover::before {
   width: calc(100% - 25px);
@@ -144,8 +144,8 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   height: 75px;
 }
 .hover-image {
-  width: 100%; /* Set the width to 100% of the container */
-  height: 100%; /* Preserve aspect ratio */
+  width: 100%;
+  height: 100%;
 }
 .hover-text {
   position: absolute;
@@ -183,8 +183,8 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   cursor: pointer;
   margin-bottom: 20px;
   position: relative;
-  width: 350px; /* Set the width of the project box */
-  height: 300px; /* Set the height of the project box */
+  width: 350px; 
+  height: 300px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -197,34 +197,34 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   left: 0;
   width: 100%;
   height: 25px;
-  background-color: #ccc; /* Set the color of the gray rectangle */
+  background-color: #ccc;
   z-index: 1;
   border-radius: 5px 5px 0 0;
 }
 .circles {
   position: absolute;
-  top: 2%; /* Adjust the vertical position of the circles (space between image and circles) */
+  top: 2%;
   left: 12%;
   transform: translateX(-50%);
   display: flex;
-  z-index: 3; /* Move the circles above the image and the gray rectangle */
+  z-index: 3;
 }
 /* CSS for the circles */
 .circle {
-  width: 15px; /* Set the size of the circles */
+  width: 15px;
   height: 15px;
-  margin: 0 5px; /* Adjust the spacing between the circles */
-  border-radius: 50%; /* Make the circles round */
+  margin: 0 5px; 
+  border-radius: 50%;
 }
 /* Colors for the circles */
 .red-circle {
-  background-color: #FF4646; /* Set the color of the red circle */
+  background-color: #FF4646;
 }
 .yellow-circle {
-  background-color: #FFD300; /* Set the color of the yellow circle */
+  background-color: #FFD300; 
 }
 .green-circle {
-  background-color: #4CAF50; /* Set the color of the green circle */
+  background-color: #4CAF50;
 }
 .modal-overlay {
   position: fixed;
