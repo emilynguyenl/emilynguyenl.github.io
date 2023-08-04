@@ -309,3 +309,38 @@ footer {
   color: #595959;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+  }
+
+  .profile-pic {
+    width: 300px;
+    align-items: center;
+  }
+
+  .custom-box p {
+    line-height: 1.1;
+    font-size: 12px;
+    height: 5px;
+  }
+
+  #about {
+    height: fit-content;
+  }
+
+  #about .col {
+    width: 5px;
+    margin-bottom: 7px;
+  }
+
+  #projects {
+    height: fit-content;
+  }
+
+  #contact {
+    height: fit-content;
+  }
+}
