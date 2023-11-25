@@ -310,7 +310,11 @@ footer {
   text-decoration: none;
 }
 
+/* adjusting to fit mobile screen */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar {
     font-size: 12px;
     letter-spacing: 0.1rem;
