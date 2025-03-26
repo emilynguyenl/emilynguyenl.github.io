@@ -3,9 +3,9 @@ const sentences = [
     "nice to meet you!",
     "welcome to my portfolio :)",
     "my name is emily.",
-    "i go to chapman university.",
+    "i am a chapman university alum.",
     "i am interested in data & analytics.",
-    "i am also a lover of puzzles."
+    "i also love puzzles."
   ];
   
   const typingSpeed = 100;
